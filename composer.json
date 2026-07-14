@@ -1,0 +1,62 @@
+{
+    "name": "open-dxp/qrcode-bundle",
+    "type": "opendxp-bundle",
+    "license": "GPL-3.0-or-later",
+    "description": "QR-Code bundle for OpenDXP",
+    "keywords": [
+        "opendxp",
+        "qrcode"
+    ],
+    "authors": [
+        {
+            "name": "OpenDXP Team",
+            "email": "contact@opendxp.ch",
+            "homepage": "https://www.opendxp.ch",
+            "role": "Developer"
+        },
+        {
+            "name": "Christian Flack",
+            "email": "christian.flack@gal-digital.de",
+            "homepage": "https://www.gal-digital.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "~8.3.0 || ~8.4.0 || ~8.5.0",
+        "endroid/qr-code": "^4 || ^5.1",
+        "open-dxp/opendxp": "^1.0"
+    },
+    "require-dev": {
+        "symfony/runtime": "^7.3",
+        "phpstan/phpstan": "^2.0",
+        "phpstan/phpstan-symfony": "^2.0.15"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenDxp\\Bundle\\QrcodeBundle\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OpenDxp\\Model\\DataObject\\": [
+                "var/classes/DataObject"
+            ]
+        },
+        "files": [
+            "kernel/Kernel.php"
+        ]
+    },
+    "extra": {
+        "opendxp": {
+            "bundles": [
+                "OpenDxp\\Bundle\\QrcodeBundle\\OpenDxpQrcodeBundle"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "symfony/runtime": true
+        }
+    }
+}

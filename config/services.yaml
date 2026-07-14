@@ -1,0 +1,14 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    OpenDxp\Bundle\QrcodeBundle\Controller\:
+        resource: '../src/Controller'
+        tags: [ controller.service_arguments ]
+        public: true
+
+    OpenDxp\Bundle\QrcodeBundle\EventListener\AdminListener:
+        tags:
+            - { name: kernel.event_listener, event: opendxp.admin.indexAction.settings, method: addIndexSettings }

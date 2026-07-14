@@ -1,0 +1,12 @@
+opendxp_qrcode_admin:
+    resource: admin.yaml
+    name_prefix: opendxp_qrcode_admin_
+    prefix: /admin/gd/qrcode
+    options:
+        expose: true
+
+opendxp_qrcode_frontend:
+    resource: frontend.yaml
+    name_prefix: opendxp_qrcode_frontend_
+    options:
+        expose: true

@@ -1,0 +1,13 @@
+includes:
+	- %currentWorkingDirectory%/vendor/phpstan/phpstan-symfony/extension.neon
+	- phpstan-baseline.neon
+parameters:
+    level: 8
+    paths:
+        - src
+    scanFiles:
+        - %currentWorkingDirectory%/vendor/open-dxp/opendxp/stubs/dynamic-constants.php
+    reportUnmatchedIgnoredErrors: false
+    symfony:
+        containerXmlPath: %currentWorkingDirectory%/var/cache/test/App_KernelTestDebugContainer.xml
+        constantHassers: false
