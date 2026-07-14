@@ -28,8 +28,9 @@
     },
     "require-dev": {
         "symfony/runtime": "^7.4",
-        "phpstan/phpstan": "^2.2",
-        "phpstan/phpstan-symfony": "^2.0.20"
+        "symfony/config": "^7.4.14",
+        "phpstan/phpstan": "^2.0",
+        "phpstan/phpstan-symfony": "^2.0.15"
     },
     "autoload": {
         "psr-4": {
