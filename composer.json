@@ -24,7 +24,7 @@
     "require": {
         "php": "~8.3.0 || ~8.4.0 || ~8.5.0",
         "endroid/qr-code": "^4 || ^5.1",
-        "open-dxp/opendxp": "^1.3"
+        "open-dxp/opendxp": "^1.5"
     },
     "require-dev": {
         "open-dxp/test-foundation": "1.x-dev",
