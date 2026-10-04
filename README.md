@@ -23,7 +23,7 @@ return [
 ];
 ```
 
-Execute: `$ bin/console doctrine:migrations:migrate --prefix 'OpenDxp\Bundle\QrcodeBundle\Migrations'`
+Execute: `$ bin/console opendxp:bundle:install OpenDxpQrcodeBundle`
 
 ## Upgrading
 - Execute: `$ bin/console doctrine:migrations:migrate --prefix 'OpenDxp\Bundle\QrcodeBundle\Migrations'`

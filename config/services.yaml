@@ -12,3 +12,8 @@ services:
     OpenDxp\Bundle\QrcodeBundle\EventListener\AdminListener:
         tags:
             - { name: kernel.event_listener, event: opendxp.admin.indexAction.settings, method: addIndexSettings }
+
+    OpenDxp\Bundle\QrcodeBundle\Installer:
+        public: true
+        arguments:
+            $bundle: "@=service('kernel').getBundle('OpenDxpQrcodeBundle')"
