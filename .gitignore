@@ -2,3 +2,14 @@
 /vendor/
 /.php-cs-fixer.cache
 /composer.lock
+
+######################
+# Tests              #
+######################
+# only the *.dist configuration is staged
+/phpunit.xml
+/.phpunit.cache/
+
+# agent instructions stay local
+/CLAUDE.md
+/.claude/
