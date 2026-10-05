@@ -27,7 +27,7 @@
         "open-dxp/opendxp": "^1.5"
     },
     "require-dev": {
-        "open-dxp/test-foundation": "1.x-dev",
+        "open-dxp/test-foundation": "^1.0",
         "phpstan/phpstan": "^2.0",
         "phpstan/phpstan-symfony": "^2.0.15",
         "symfony/config": "^7.4.14",
