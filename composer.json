@@ -24,13 +24,13 @@
     "require": {
         "php": "~8.3.0 || ~8.4.0 || ~8.5.0",
         "endroid/qr-code": "^4 || ^5.1",
-        "open-dxp/opendxp": "^1.5"
+        "open-dxp/opendxp": "^1.5",
+        "symfony/config": "^7.4"
     },
     "require-dev": {
         "open-dxp/test-foundation": "^1.0",
         "phpstan/phpstan": "^2.0",
         "phpstan/phpstan-symfony": "^2.0.15",
-        "symfony/config": "^7.4.14",
         "symfony/dotenv": "^7.4",
         "symfony/runtime": "^7.4"
     },
