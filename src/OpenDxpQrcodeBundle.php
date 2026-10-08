@@ -17,10 +17,12 @@ namespace OpenDxp\Bundle\QrcodeBundle;
 
 use OpenDxp\Bundle\QrcodeBundle\DependencyInjection\OpenDxpQrcodeExtension;
 use OpenDxp\Extension\Bundle\AbstractOpenDxpBundle;
+use OpenDxp\Extension\Bundle\Installer\InstallerInterface;
 use OpenDxp\Extension\Bundle\OpenDxpBundleAdminClassicInterface;
 use OpenDxp\Extension\Bundle\Traits\BundleAdminClassicTrait;
 use OpenDxp\Extension\Bundle\Traits\PackageVersionTrait;
 use Override;
+use RuntimeException;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use function dirname;
 
@@ -39,6 +41,16 @@ final class OpenDxpQrcodeBundle extends AbstractOpenDxpBundle implements OpenDxp
         }
 
         return $this->extension ?: null;
+    }
+
+    #[Override]
+    public function getInstaller(): InstallerInterface
+    {
+        $installer = $this->container?->get(Installer::class);
+
+        return $installer instanceof InstallerInterface
+            ? $installer
+            : throw new RuntimeException('The bundle is asked for its installer before the container is there.');
     }
 
     #[Override]
