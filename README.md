@@ -27,6 +27,8 @@ Execute: `$ bin/console opendxp:bundle:install OpenDxpQrcodeBundle`
 
 ## Upgrading
 - Execute: `$ bin/console doctrine:migrations:migrate --prefix 'OpenDxp\Bundle\QrcodeBundle\Migrations'`
+- Read the [changelog](CHANGELOG.md) before you update.
+- Coming from an earlier package? Read [Migrating to OpenDXP](docs/Migrating_to_OpenDXP.md).
 
 ***
 
@@ -46,7 +48,7 @@ opendxp_qrcode:
 ***
 
 ## License
-Licensed under the GNU General Public License v3.0 (GPLv3). For details, please see [LICENSE.md](LICENSE.md).
+Licensed under the GNU General Public License v3.0 (GPLv3). For details, please see [LICENSE](LICENSE).
 
 ## Copyright
 © GAL Digital GmbH  
