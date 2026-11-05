@@ -1,5 +1,5 @@
 <?php
-namespace OpenDxp\Bundle\QrcodeBundle\\Probe;
+namespace OpenDxp\Bundle\QrcodeBundle\Probe;
 
 use OpenDxp\Db;
 use OpenDxp\Model\DataObject\Listing;
